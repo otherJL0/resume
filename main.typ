@@ -76,7 +76,7 @@
 - Developed a proof-of-concept Python command line tool using
 	Playwright, Typer-cli, and PyGit
 	to facilitate the migration of code from one site to another
-	in the abscence of a version control system
+	in the absence of a version control system
 - Developed a proof-of-concept Python library to update main site components
 	using Pydantic and SQLModel for an enjoyable developer experience
 	through extensive use of type hinting
@@ -87,7 +87,7 @@
 	to expressively named single purpose methods
 	with typed docstrings to increase code readability and maintainability
 - Reduced the time-to-build for local developer environments
-	by streamlinging the intial Bash script launching the Docker-compose environment
+	by streamlining the initial Bash script launching the Docker-compose environment
 
 
 #work(
