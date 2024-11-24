@@ -89,12 +89,12 @@
   institution: "Georgia State University",
   location: "Atlanta, GA",
   dates: dates-helper(start-date: "Jan 2014", end-date: "May 2018"),
-  degree: "Bachelor's of Science, Computer Science",
+  degree: "Bachelor of Science, Computer Science",
 )
 #edu(
   institution: "Georgia State University",
   location: "Atlanta, GA",
   dates: dates-helper(start-date: "Jan 2014", end-date: "May 2018"),
-  degree: "Bachelor's of Science, Biology",
+  degree: "Bachelor of Science, Biology",
 )
 
