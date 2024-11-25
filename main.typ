@@ -57,6 +57,9 @@
 - Created reusable Terraform module to quickly deploy Kubernetes development namespaces and namespaced AWS RDS instances, reducing friction for experimental environments
 - Developed a workflow to map AWS secrets to Kubernetes Secrets Operator for each namespace, reducing the number of config files for each service from one-per-namespace to one
 - Enhanced CI/CD pipeline by implementing granular Github Action deployment targets, enabling users to interactively deploy select services to select environments
+- Led successful cross-organizational microservices migration
+  - Forked and restructured configuration, secret management, and Istio gateway configuration for 7 Flask microservices
+  - Implemented secure public authentication endpoints using Flask for secure cross-organizational access
 
 #work(
   title: "Application Developer",
@@ -78,10 +81,10 @@
 )
 - Introduced and advocated for the use of build tools (Gradle) and code analyzers (MyPy, Black), creating a more streamlined approach for new project development
 - Modernized legacy Bash and TCL scripts for the daily pull of new data to Python 3.7, increasing code maintainability and readability
-- Introduced the use of Python to quickly develop various ETL job monitoring and email alerting scripts, increasing management's visibility into active ETL jobs
+// - Introduced the use of Python to quickly develop various ETL job monitoring and email alerting scripts, increasing management's visibility into active ETL jobs
 // - Led migration of platform cron jobs to Apache Airflow, increasing visibility and reliability of all platform ETL jobs and retiring bespoke Python scripts
 - Led migration of EC2-hosted data pipelines from AWS Linux to AWS Linux 2, writing Bash scripts to copy users, configure chroot directories, manage user permissions, and ensure SSH access for hundreds of existing data sites
-- Developed greenfield Java ETL programs to process incoming data to SQL Server from new data sources with a test-driven approach
+// - Developed greenfield Java ETL programs to process incoming data to SQL Server from new data sources with a test-driven approach
 - Led server side troubleshooting efforts for sporadic system level issues for  various teams ranging from updating user groups, tracing system log messages, and  managing site SSH keys
 == Education
 

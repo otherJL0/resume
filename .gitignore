@@ -333,3 +333,4 @@ package-lock.json
 # Nix
 /result
 .direnv/
+*.pdf
