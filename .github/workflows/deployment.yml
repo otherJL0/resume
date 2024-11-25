@@ -1,0 +1,25 @@
+name: Deployment
+
+concurrency: production
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - uses: actions/checkout@v4
+      - uses: typst-community/setup-typst@v3.1.0
+        with:
+          typst-version: latest
+      - run: typst compile main.typ jonathan_lopez_resume.pdf
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Resume
+          path: jonathan_lopez_resume.pdf
+      
+              
