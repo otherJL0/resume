@@ -6,7 +6,6 @@
 #let github = "github.com/otherJL0"
 #let linkedin = "linkedin.com/in/jonathan-lopez-b83114b5"
 #let phone = "+1 (470) 262-7388"
-#let personal-site =  "stuxf.dev"
 #let accent-color = "#4c4f69"
 
 #show: resume.with(
@@ -35,6 +34,17 @@
 * #generic-two-by-two(top-left: "", top-right: "", bottom-left: "", bottom-right: "")
 * #generic-one-by-two(left: "", right: "")
 */
+== Open Source Contributions
+#work(
+  title: "Oatmeal",
+  company: "https://github.com/otherJL0/oatmeal",
+  dates: dates-helper(start-date: "November 2024", end-date: "Present"),
+)
+- Maintaining an active fork of Oatmeal, a Rust command line application to interact with LLM through a terminal chat bubble interface using the Ratatui TUI framework, with latest dependencies and Rust toolchain
+- Implemented feature to highlight and copy text in terminal text bubbles using the mouse, simplifying original process for copying text snippets through text input commands
+- Added interactive selection menu to choose from old chat sessions, streamlining the user experience for listing, selecting, and entering an old session to a single interactive command
+- (WIP) Adding command to interactively load files from relative paths to more easily provide context for a chat session
+
 == Work Experience
 
 #work(
@@ -43,9 +53,9 @@
   company: "Mediaocean",
   dates: dates-helper(start-date: "March 2024", end-date: "Present"),
 )
-- Automated generation of Pydantic models from OpenAPI specifications, streamlining API contract maintenance and ensuring type safety across service boundaries
+- Automated the generation of Pydantic models from OpenAPI specifications, streamlining API contract maintenance and ensuring type safety across service boundaries
 - Modernized Flask microservice by implementing v2 codebase with strict type hinting, Pydantic data validation, and SQLAlchemy ORM models, improving code readability and maintainability
-- Enhanced rule engine functionality by implementing new weather-based triggers using external API integration, Redis caching, and Celery task scheduling
+// - Enhanced rule engine functionality by implementing new weather-based triggers using external API integration, Redis caching, and Celery task scheduling
 
 #work(
   title: "Platform Engineer",
@@ -57,18 +67,18 @@
 - Created reusable Terraform module to quickly deploy Kubernetes development namespaces and namespaced AWS RDS instances, reducing friction for experimental environments
 - Developed a workflow to map AWS secrets to Kubernetes Secrets Operator for each namespace, reducing the number of config files for each service from one-per-namespace to one
 - Enhanced CI/CD pipeline by implementing granular Github Action deployment targets, enabling users to interactively deploy select services to select environments
-- Led successful cross-organizational microservices migration
-  - Forked and restructured configuration, secret management, and Istio gateway configuration for 7 Flask microservices
-  - Implemented secure public authentication endpoints using Flask for secure cross-organizational access
+- Led successful cross-organizational migration 7 Flask microservices, AWS Secrets manager, and Kubernetes manifests and implemented secure public authentication endpoints in Flask for secure cross-organizational access
+  // - Forked and restructured configuration, secret management, and Istio gateway configuration for 7 Flask microservices
+  // - Implemented secure public authentication endpoints using Flask for secure cross-organizational access
 
-#work(
-  title: "Application Developer",
-  location: "Remote",
-  company: "Gridunity",
-  dates: dates-helper(start-date: "Apr 2021", end-date: "Feb 2022"),
-)
-- Developed a proof-of-concept Python command line tool using Playwright, Typer-cli, and PyGit to facilitate the migration of code from one site to another in the absence of a version control system
-- Developed a proof-of-concept Python library to update main site components using Pydantic and SQLModel for an enjoyable developer experience through extensive use of type hinting
+// #work(
+//   title: "Application Developer",
+//   location: "Remote",
+//   company: "Gridunity",
+//   dates: dates-helper(start-date: "Apr 2021", end-date: "Feb 2022"),
+// )
+// - Developed a proof-of-concept Python command line tool using Playwright, Typer-cli, and PyGit to facilitate the migration of code from one site to another in the absence of a version control system
+// - Developed a proof-of-concept Python library to update main site components using Pydantic and SQLModel for an enjoyable developer experience through extensive use of type hinting
 // - Developed a proof-of-concept Python cli tool to generate JSON fields from dataclasses for quick through extensive use of type hinting
 // - Reduced the time-to-build for local developer environments by streamlining the initial Bash script launching the Docker-compose environment
 
@@ -86,6 +96,7 @@
 - Led migration of EC2-hosted data pipelines from AWS Linux to AWS Linux 2, writing Bash scripts to copy users, configure chroot directories, manage user permissions, and ensure SSH access for hundreds of existing data sites
 // - Developed greenfield Java ETL programs to process incoming data to SQL Server from new data sources with a test-driven approach
 - Led server side troubleshooting efforts for sporadic system level issues for  various teams ranging from updating user groups, tracing system log messages, and  managing site SSH keys
+
 == Education
 
 #edu(
@@ -100,4 +111,3 @@
   dates: dates-helper(start-date: "Jan 2014", end-date: "May 2018"),
   degree: "Bachelor of Science, Biology",
 )
-
