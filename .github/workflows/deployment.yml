@@ -21,5 +21,7 @@ jobs:
         with:
           name: Resume
           path: jonathan_lopez_resume.pdf
-      
-              
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: jonathan_lopez_resume.pdf
