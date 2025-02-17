@@ -34,17 +34,6 @@
 * #generic-two-by-two(top-left: "", top-right: "", bottom-left: "", bottom-right: "")
 * #generic-one-by-two(left: "", right: "")
 */
-== Open Source Contributions
-#work(
-  title: "Oatmeal",
-  company: "https://github.com/otherJL0/oatmeal",
-  dates: dates-helper(start-date: "November 2024", end-date: "Present"),
-)
-- Maintaining an active fork of Oatmeal, a Rust command line application to interact with LLM through a terminal chat bubble interface using the Ratatui TUI framework, with latest dependencies and Rust toolchain
-- Implemented feature to highlight and copy text in terminal text bubbles using the mouse, simplifying original process for copying text snippets through text input commands
-- Added interactive selection menu to choose from old chat sessions, streamlining the user experience for listing, selecting, and entering an old session to a single interactive command
-- (WIP) Adding command to interactively load files from relative paths to more easily provide context for a chat session
-
 == Work Experience
 
 #work(
@@ -96,6 +85,18 @@
 - Led migration of EC2-hosted data pipelines from AWS Linux to AWS Linux 2, writing Bash scripts to copy users, configure chroot directories, manage user permissions, and ensure SSH access for hundreds of existing data sites
 // - Developed greenfield Java ETL programs to process incoming data to SQL Server from new data sources with a test-driven approach
 - Led server side troubleshooting efforts for sporadic system level issues for  various teams ranging from updating user groups, tracing system log messages, and  managing site SSH keys
+
+== Open Source Contributions
+#work(
+  title: "Oatmeal",
+  company: "https://github.com/otherJL0/oatmeal",
+  dates: dates-helper(start-date: "November 2024", end-date: "Present"),
+)
+- Maintaining an active fork of Oatmeal, a Rust command line application to interact with LLM through a terminal chat bubble interface using the Ratatui TUI framework, with latest dependencies and Rust toolchain
+- Implemented feature to highlight and copy text in terminal text bubbles using the mouse, simplifying original process for copying text snippets through text input commands
+- Added interactive selection menu to choose from old chat sessions, streamlining the user experience for listing, selecting, and entering an old session to a single interactive command
+- (WIP) Adding command to interactively load files from relative paths to more easily provide context for a chat session
+
 
 == Education
 
