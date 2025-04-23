@@ -5,7 +5,7 @@
 #let email = "jonathanglopez@gmail.com"
 #let github = "github.com/otherJL0"
 #let linkedin = "linkedin.com/in/jonathan-lopez-b83114b5"
-#let phone = "+1 (470) 262-7388"
+#let phone = "(470) 262-7388"
 #let accent-color = "#4c4f69"
 
 #show: resume.with(
@@ -40,11 +40,12 @@
   title: "Senior Software Development Engineer",
   location: "Remote",
   company: "Mediaocean",
-  dates: dates-helper(start-date: "March 2024", end-date: "Present"),
+  dates: dates-helper(start-date: "March 2024", end-date: "March 2025"),
 )
-- Automated the generation of Pydantic models from OpenAPI specifications, streamlining API contract maintenance and ensuring type safety across service boundaries
+- Wrote developer tool using Make automating the generation of Pydantic models from OpenAPI specifications, streamlining API contract maintenance and ensuring type safety across service boundaries
 - Modernized Flask microservice by implementing v2 codebase with strict type hinting, Pydantic data validation, and SQLAlchemy ORM models, improving code readability and maintainability
-// - Enhanced rule engine functionality by implementing new weather-based triggers using external API integration, Redis caching, and Celery task scheduling
+- Enhanced rule engine functionality by implementing new weather-based triggers using external API integration, Redis caching, and Celery task scheduling
+- Wrote developer tool in Python to generate sample input through the terminal instead of site UI, streamlining local development testing
 
 #work(
   title: "Platform Engineer",
@@ -52,24 +53,24 @@
   company: "Mediaocean",
   dates: dates-helper(start-date: "Feb 2022", end-date: "March 2024"),
 )
-- Wrote developer productivity tool using Python, Typer CLI framework, and tmux terminal multiplexer to configure and launch interdependent microservices, significantly streamlining the local development workflow
-- Created reusable Terraform module to quickly deploy Kubernetes development namespaces and namespaced AWS RDS instances, reducing friction for experimental environments
-- Developed a workflow to map AWS secrets to Kubernetes Secrets Operator for each namespace, reducing the number of config files for each service from one-per-namespace to one
-- Enhanced CI/CD pipeline by implementing granular Github Action deployment targets, enabling users to interactively deploy select services to select environments
+- Wrote developer tool using Python, Typer CLI framework, and tmux terminal multiplexer to configure and launch interdependent microservices, significantly streamlining the local development workflow
+- Wrote developer tool using Bash and Terraform to quickly deploy Kubernetes development namespaces and namespaced AWS RDS instances, reducing friction for experimental environments
+- Wrote a developer tool mapping AWS secrets to Kubernetes Secrets Operator for each namespace, reducing the number of config files for each service from one-per-namespace to one
+- Updated developer tool to enhance CI/CD pipeline by implementing granular Github Action deployment targets, enabling users to interactively deploy select services to select environments
 - Led successful cross-organizational migration 7 Flask microservices, AWS Secrets manager, and Kubernetes manifests and implemented secure public authentication endpoints in Flask for secure cross-organizational access
-  // - Forked and restructured configuration, secret management, and Istio gateway configuration for 7 Flask microservices
-  // - Implemented secure public authentication endpoints using Flask for secure cross-organizational access
+  - Forked and restructured configuration, secret management, and Istio gateway configuration for 7 Flask microservices
+  - Implemented secure public authentication endpoints using Flask for secure cross-organizational access
 
-// #work(
-//   title: "Application Developer",
-//   location: "Remote",
-//   company: "Gridunity",
-//   dates: dates-helper(start-date: "Apr 2021", end-date: "Feb 2022"),
-// )
-// - Developed a proof-of-concept Python command line tool using Playwright, Typer-cli, and PyGit to facilitate the migration of code from one site to another in the absence of a version control system
-// - Developed a proof-of-concept Python library to update main site components using Pydantic and SQLModel for an enjoyable developer experience through extensive use of type hinting
-// - Developed a proof-of-concept Python cli tool to generate JSON fields from dataclasses for quick through extensive use of type hinting
-// - Reduced the time-to-build for local developer environments by streamlining the initial Bash script launching the Docker-compose environment
+#work(
+  title: "Application Developer",
+  location: "Remote",
+  company: "Gridunity",
+  dates: dates-helper(start-date: "Apr 2021", end-date: "Feb 2022"),
+)
+- Wrote a developer tool in Python using Playwright, Typer-cli, and PyGit to facilitate the migration of code from one site to another in the absence of a version control system
+- Developed Python library to update main site components using Pydantic and SQLModel for an enjoyable developer experience through extensive use of type hinting
+- Developed Python developer tool to generate JSON fields from dataclasses for quick  debugging through extensive use of type hinting
+- Reduced the time-to-build for local developer environments by streamlining the initial Bash script launching the Docker-compose environment
 
 
 #work(
@@ -78,25 +79,43 @@
   company: "Inductive Health Informatics",
   dates: dates-helper(start-date: "Oct 2019", end-date: "March 2021"),
 )
+- Developed greenfield Java ETL programs to process incoming data to SQL Server from new data sources with a test-driven approach
 - Introduced and advocated for the use of build tools (Gradle) and code analyzers (MyPy, Black), creating a more streamlined approach for new project development
-- Modernized legacy Bash and TCL scripts for the daily pull of new data to Python 3.7, increasing code maintainability and readability
-// - Introduced the use of Python to quickly develop various ETL job monitoring and email alerting scripts, increasing management's visibility into active ETL jobs
-// - Led migration of platform cron jobs to Apache Airflow, increasing visibility and reliability of all platform ETL jobs and retiring bespoke Python scripts
+- Introduced the use of Python to quickly develop various ETL job monitoring and email alerting scripts, increasing management's visibility into active ETL jobs
+- Migrated legacy Bash and TCL ETL scripts to Python 3.7, increasing code maintainability and readability
+- Led migration of platform cron jobs to Apache Airflow, increasing visibility and reliability of all platform ETL jobs and retiring bespoke Python scripts
 - Led migration of EC2-hosted data pipelines from AWS Linux to AWS Linux 2, writing Bash scripts to copy users, configure chroot directories, manage user permissions, and ensure SSH access for hundreds of existing data sites
-// - Developed greenfield Java ETL programs to process incoming data to SQL Server from new data sources with a test-driven approach
 - Led server side troubleshooting efforts for sporadic system level issues for  various teams ranging from updating user groups, tracing system log messages, and  managing site SSH keys
+// - Led onboarding of 5 junior team members and served as unofficial technical lead
 
-== Open Source Contributions
+== Projects
 #work(
   title: "Oatmeal",
   company: "https://github.com/otherJL0/oatmeal",
-  dates: dates-helper(start-date: "November 2024", end-date: "Present"),
+  // dates: dates-helper(start-date: "November 2024", end-date: "Present"),
 )
-- Maintaining an active fork of Oatmeal, a Rust command line application to interact with LLM through a terminal chat bubble interface using the Ratatui TUI framework, with latest dependencies and Rust toolchain
+- Maintaining an active fork of Oatmeal, a Rust developer tool to interact with LLM through a terminal chat bubble interface using the Ratatui TUI framework, with latest dependencies and Rust toolchain
 - Implemented feature to highlight and copy text in terminal text bubbles using the mouse, simplifying original process for copying text snippets through text input commands
 - Added interactive selection menu to choose from old chat sessions, streamlining the user experience for listing, selecting, and entering an old session to a single interactive command
-- (WIP) Adding command to interactively load files from relative paths to more easily provide context for a chat session
+- Adding command to interactively load files from relative paths to more easily provide context for a chat session
 
+// #work(
+//   title: "Toy Programming Languages",
+//   company: "https://github.com/otherJL0/loxrs\nhttps://github.com/otherJL0/monkeyrs",
+// )
+// - 
+// - Reimplemented projects in new programming languages to ramp up understanding
+// - Implemented interpreter in Rust for a toy programming language Monkey
+// - Implemented interpreter in Zig for toy programming language Lox
+// - Implemented interpreter in Rust for a toy programming language Lox
+// - Implemented interpreter in Python for toy programming language Lox
+
+#work(
+  title: "Python Standard Library Reimplementation",
+  company: "https://github.com/otherJL0/rstd",
+)
+- Experimental personal project rewriting the Python standard library in Rust
+- Set up benchmarking of functions using airspeedvelocity on Python side and criterion on Rust side to ensure implementation is as fast or faster than original Python module
 
 == Education
 
